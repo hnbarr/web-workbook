@@ -1,3 +1,33 @@
 body {
-    background-color: wheat;
+    background-image: url(../page.jpg);
+}
+
+header {
+    background-color: transparent;
+    padding: 30px;
+    opacity: .25%;
+    color: darkslategray;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+}
+
+main {
+    float: left;
+    border: 1px solid none;
+    background-color: white;
+    padding: 25px;
+}
+h3 {
+    color:white;
+    background-color: teal;
+    width: 50%;
+    text-align: center;
+}
+
+article {
+    background-color: teal;
+    padding: 60%;
 }
