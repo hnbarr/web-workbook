@@ -3,22 +3,20 @@ body {
     padding: 25px;
 }
 
-.row {
-    display: flex;
+main {
+   display: flex;
 }
 
-.column {
-    padding: 10px;
-}
-
-.left {
+section {
     background-color: darksalmon;
     text-align: center;
+    padding: 5px;
 }
 
-.right {
+aside {
     background-color: seashell;
     text-align: left;
+    padding: 5px;
 }
 
 .contact {
