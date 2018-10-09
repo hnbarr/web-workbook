@@ -76,3 +76,12 @@ footer {
     text-align: center;
 }
 
+a {
+    color: #C3F78C;
+    padding: 10px 60px;
+}
+
+a:hover {
+    color: magenta;
+}
+}
