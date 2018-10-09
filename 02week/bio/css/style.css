@@ -1,12 +1,12 @@
 body {
-    background-image: url(../page.jpg);
+    background-image: url(../brick.jpeg);
 }
 
 header {
     background-color: transparent;
     padding: 30px;
-    opacity: .25%;
-    color: darkslategray;
+    color: wheat;
+    text-shadow: 1px 2px black;
 }
 
 h1 {
@@ -15,19 +15,16 @@ h1 {
 }
 
 main {
-    float: left;
     border: 1px solid none;
-    background-color: white;
+    background-color: wheat;
     padding: 25px;
+    width: 45%;
 }
-h3 {
-    color:white;
-    background-color: teal;
-    width: 50%;
-    text-align: center;
+
+h3 {    
+    text-align: left;
 }
 
 article {
-    background-color: teal;
-    padding: 60%;
+    color: white;
 }
