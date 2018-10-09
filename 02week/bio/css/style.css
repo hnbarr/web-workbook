@@ -23,7 +23,7 @@ nav {
 }
 
 li {
-    float: left;
+        float: left;
 }
 
 li a {
@@ -65,7 +65,7 @@ p {
 footer {
     background-color: black;
     width: 100%;
-    padding: 20px 0px;
+    padding: 10px 0px;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -75,3 +75,4 @@ footer {
     font-size: 20px;
     text-align: center;
 }
+
