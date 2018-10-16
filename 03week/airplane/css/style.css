@@ -1,5 +1,5 @@
+/* Heather Starting Point */
 body {
-    background-image: url("../img/airline.jpg");
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
@@ -32,3 +32,10 @@ a:hover {
 img {
     padding-right: 5px;
 }
+
+#wing {
+    width: 100%;
+    height: 100%;
+}
+
+/* Heather Stopping Point */
