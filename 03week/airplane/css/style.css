@@ -1,24 +1,34 @@
 body {
     background-image: url("../img/airline.jpg");
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
-    border: 2px solid red;
     background-color: #213A53;
     width: 100%;
-    display: flex
+    display: flex;
 }
 
 .topnav {
     margin: 0 auto;
     list-style-type: none;
     float: right;
-    padding: 20px;
 }
 
 a {
     color: white;
     text-decoration: none;
+    padding: 25px;
+    position: relative;
+    top: 30px;
+    font-size: 13px;
 }
 
+a:hover {
+    color: lightseagreen;
+}
+
+img {
+    padding-right: 5px;
+}
