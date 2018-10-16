@@ -1,0 +1,24 @@
+body {
+    background-image: url("../img/airline.jpg");
+    margin: 0;
+}
+
+header {
+    border: 2px solid red;
+    background-color: #213A53;
+    width: 100%;
+    display: flex
+}
+
+.topnav {
+    margin: 0 auto;
+    list-style-type: none;
+    float: right;
+    padding: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
