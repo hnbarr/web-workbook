@@ -1,9 +1,11 @@
 body {
-    /* background-image: url("../img/wov.png"); */
     display: flex;
     width: 100%;
     margin: 0 auto;
     font-family: Delius Unicase; 
+    text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.2);
+    /* flex-grow: 1;
+    flex-shrink: 1; */
 }
 
 header {
@@ -14,6 +16,21 @@ header {
     font-size: 12px;
     width: 100%;
     color: #323C50;
+}
+
+aside {
+    position: fixed;
+    top: 15%;
+    padding: 3%;
+}    
+
+.fab {
+    color: #C9A17E;
+    text-shadow: none !important;
+}
+
+.fab:hover{
+    color: #323C50;;
 }
 
 h1 {
@@ -45,9 +62,7 @@ ul a {
     color: #414141;
     text-align: center;
     justify-content: center;
-    text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.2);
     padding: 15px;
-    margin-top: 10px;
 }
 
 .container {
@@ -81,27 +96,67 @@ ul a {
     font-size: 30px;
 }
 
+.median {
+    padding-top: 2%;
+    color: #C9A17E;
+    text-align: center;
+    font-size: 30px;
+}
+
 .box2 {
+    color: #323C50;
     margin-top: 5%;
     display: flex;
     justify-content: space-evenly;
 }
 
-img:hover {
-    background-color: #C9A17E;
-    border-radius: 100px;
-}
 .box3 {
     margin-top: 25%;
     background-color: #F9F3D9;
-    padding: 8%;
+    padding: 3% 15%;
+    font-size: 15px;
+}
 
+h2 {
+    font-size: 45px;
+}
+
+.box3 >p{
+    text-shadow: none !important;
+}
+
+.pupimages {
+    display:flex;
+    justify-content: space-evenly;
+    align-content: center;
+    border: 1px 2px solid #323C50;
+}
+
+h3 {
+    font-size: 30px;
 }
 
 .box4 {
-    margin-top: 10%;
-    background-color: whitesmoke;
+    padding: 3%;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+h4 {
+    font-size: 20px;
+    color: #C9A17E;
+}
+
+.box5 {
+    color: whitesmoke;
+    font-size: 8px;
+    background-color: #323C50;
     width: 100vw;
-    padding: 15px;
+    padding: 10px;
     top: 150px
+}
+
+.contacts {
+    font-size: 20px;
 }
