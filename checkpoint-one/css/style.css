@@ -1,55 +1,107 @@
-/* 
-##F1F0E3 -cream
-#D4BC98 -tan
-#E06159 -coral
-#414141 -darknavy
-#C9E6F1 -babyblue
-*/
+body {
+    /* background-image: url("../img/wov.png"); */
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    font-family: Delius Unicase; 
+}
+
 header {
     background-color: whitesmoke;
     opacity: 0.6;
     position: fixed;
     display: flex;
-    font-size: 13px;
-    width: 100vw;
-    justify-content: space-around;
-    margin-bottom: 20px;
+    font-size: 12px;
+    width: 100%;
+    color: #323C50;
+}
+
+h1 {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 45%;
+    padding-left: 10%;
+
 }
 
 nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-end;
+}
+
+nav :hover {
+    color: #C9A17E;
 }
 
 ul a {
     text-decoration: none;
     width: 40px;
+    color: #361D14;
 }
 
 .box {
     color: #414141;
     text-align: center;
-    text-shadow: 2px 3px 0 rgba(0, 0, 0, 0.2);
-    padding: 50px;
-    border: 1px solid goldenrod;
+    justify-content: center;
+    text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin-top: 10px;
 }
 
 .container {
-    border: 4px solid mistyrose;
     display: flex;
     height: 100vh;
     flex-direction: column;
-    justify-content: space-around;
     margin: 0 auto;
 }
 
-footer {
-    margin-top: 10px;
+/* each box */
+
+.box1 {
+    margin-top: 5%;
+    border: none;
+    background-image: url("../img/bowl.jpg");
+    background-size: cover;
+    min-height: 50%;
+}
+
+.box1 >p{
+    color: #323C50;
+    text-shadow: 2px 4px #C9A17E;
+    font-size: 60px;
+    padding-top: 5%;
+}
+
+.container > p {
+    padding-top: 3%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+.box2 {
+    margin-top: 5%;
     display: flex;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-evenly;
+}
+
+img:hover {
+    background-color: #C9A17E;
+    border-radius: 100px;
+}
+.box3 {
+    margin-top: 25%;
+    background-color: #F9F3D9;
+    padding: 8%;
+
+}
+
+.box4 {
+    margin-top: 10%;
     background-color: whitesmoke;
-    position: sticky;
+    width: 100vw;
     padding: 15px;
+    top: 150px
 }
