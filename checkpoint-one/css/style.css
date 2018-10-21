@@ -4,8 +4,8 @@ body {
     margin: 0 auto;
     font-family: Delius Unicase; 
     text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.2);
-    /* flex-grow: 1;
-    flex-shrink: 1; */
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 /* Header, Social Media & Nav Bar */
 header {
@@ -13,7 +13,7 @@ header {
     opacity: 0.6;
     position: fixed;
     display: flex;
-    font-size: 14px;
+    font-size: 13px;
     width: 100%;
     color: #323C50;
 }
@@ -41,14 +41,14 @@ aside {
 h1 {
     display: flex;
     justify-content: flex-start;
-    flex: 2;
+    flex: 1;
     padding-left: 10%;
 
 }
 
 nav {
     display: flex;
-    flex: 2;
+    flex: 3;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
@@ -61,7 +61,7 @@ nav :hover {
 
 ul a {
     text-decoration: none;
-    width: 40px;
+    width: 70%;
     color: #361D14;
 }
 /* general box content style */
@@ -89,6 +89,7 @@ ul a {
 }
 
 .box1 {
+    flex: 1;
     margin-top: 5%;
     border: none;
     background-image: url("../img/bowl.jpg");
@@ -98,9 +99,9 @@ ul a {
 
 .box1 >p{
     color:#4D6280;
-    text-shadow: 2px 4px #323C50;
-    font-size: 70px;
-    padding-top: 15%;
+    text-shadow: 2px 4px #F0DFCB;
+    font-size: 85px;
+    padding: 3%;
 }
 
 strong {
@@ -108,6 +109,7 @@ strong {
 }
 
 .median {
+    flex:1;
     padding-top: 5%;
     color: #323C50;
     text-align: center;
@@ -115,14 +117,15 @@ strong {
 }
 
 .box2 {
+    flex: 1;
     color: #323C50;
     font-size: 20px;
-    margin-top: 5%;
     display: flex;
     justify-content: space-evenly;
 }
 
 .box3 {
+    flex: 1;
     margin-top: 25%;
     background-color: #D9D1C9;
     padding: 2% 15%;
@@ -149,6 +152,7 @@ article:nth-of-type(3) img{
  }
 
 .box4 {
+    flex: 1;
     background-color: #4D6280;
 }
 
@@ -175,14 +179,24 @@ h4 {
 }
 
 .box5 {
+    flex: 1;
     color: whitesmoke;
     font-size: 8px;
     background-color: #323C50;
-    width: 100vw;
-    padding: 10px;
-    top: 150px
+    padding: 1%;
 }
 
-.contacts {
-    font-size: 20px;
+footer >p {
+    text-shadow: none !important;
+    font-size: 9px;
+    color: #F0DFCB;
+}
+
+.contacts >a{
+    font-size: 22px;
+    color: #F0DFCB;
+    padding: 3%;
+}
+.contacts >a:hover{
+    color: #C9A17E;
 }
