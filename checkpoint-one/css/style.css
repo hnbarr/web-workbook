@@ -103,7 +103,7 @@ ul a {
     justify-content: space-evenly;
     width: 100%;
 }
-
+/* to wrap images for smaller screens */
 .flavs {
     display: flex;
     flex-wrap: wrap;
@@ -123,8 +123,10 @@ ul a {
 
 .box3 >p {
     text-shadow: none !important;
+    margin: 1% 5%;
 }
 
+/* to wrap pics for reseizing screen */
 .pupimages {
     width: 100%;
     display: flex;
