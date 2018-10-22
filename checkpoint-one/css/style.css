@@ -12,7 +12,7 @@ header {
     position: fixed;
     display: flex;
     font-size: 14px;
-    width: 100%;
+    width: 100vw;
     color: #323C50;
     margin-bottom: 10%;
 }
