@@ -2,8 +2,8 @@
     display: flex;
     margin: 30px;
     padding-top: 20px;
-    border-top: 2px solid black;
-    border-right: 2px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
   }
 
   article:nth-of-type(1){
@@ -17,14 +17,16 @@
 
   img {
       width: 100%;
-      flex-shrink: 1;
+  }
+
+  p {
+      margin: 10px;
   }
   
   article:nth-of-type(2){
-    height: 200px;
     display:flex;
     flex-direction: column;
-    margin: 20px;
+    margin-bottom:  20px;
     font-size: 20px;
   }
 
@@ -51,24 +53,29 @@
   }
 
   button {
-      width: 20%;
-      height: 30px;
-      background-color: rgb(56, 56, 56);
+      background-color: #5D5D5D;
       color: white;
       font-size: 15px;
+      padding: 10px;
       text-transform: uppercase;
+      margin: 10px;
   }
 
   footer{
-    background-color: lightgray;
-    min-height: 150px;
-    width: 100%;
+    background-color:#5D5D5D;
+    min-height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
   }
  
+ .row {
+    color: white;
+    width: 40%;
+    height: 100%;
+  }
 /* desktop query  */
 /* set this number due to footer issue for inbetween 768px & 992px */
   @media (min-width: 769px) {
@@ -85,10 +92,18 @@
     footer {
         display: none;
     }
+
+    h2, p {
+        font-size: 1em;
+    }
   }
 
 /* phone query */
   @media (max-width: 576px) {
+      main {
+          display: flex;
+          flex-direction: column;
+      }
       footer {
           display: block;
       }
