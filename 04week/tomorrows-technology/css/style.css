@@ -59,23 +59,32 @@
       padding: 10px;
       text-transform: uppercase;
       margin: 10px;
+      width: 30%;
   }
 
   footer{
     background-color:#5D5D5D;
-    min-height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
   }
  
  .row {
-    color: white;
     width: 40%;
-    height: 100%;
+    color: white;
   }
+
+  h4 {
+      font-size: 18px;
+      text-align: center;
+  }
+
+li {
+    border-bottom: 1px solid white;
+    list-style-type: none;
+  }
+
 /* desktop query  */
 /* set this number due to footer issue for inbetween 768px & 992px */
   @media (min-width: 769px) {
