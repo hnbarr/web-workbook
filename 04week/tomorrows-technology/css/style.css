@@ -11,8 +11,8 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
-    padding: 25px;
+    margin: 15px;
+    padding: 15px;
     margin-left: 0px;
   }
 
@@ -21,7 +21,7 @@
   }
 
   h1 {
-      font-size: 22px;
+      font-size: 25px;
   }
 
   p {
@@ -42,12 +42,12 @@
     justify-content: center;
     align-items: center;
     margin: 10px;
-    padding: 20px;
+    padding: 10px;
     justify-content: flex-start;
   }
 
   aside p {
-      font-size: 15px;
+      font-size: 18px;
       padding: 5px;
   }
   
@@ -55,7 +55,6 @@
       width: 90%;
       border-bottom: 1px solid black;
       font-size: 22px;
-
   }
 
   .topics {
@@ -91,7 +90,7 @@
       font-size: 15px;
   }
 
-li {
+  li {
     border-bottom: 1px solid lightgrey;
     list-style-type: none;
     padding: 5px;
@@ -132,6 +131,11 @@ li {
         border-bottom: 1px solid black;
     }
 
+    article:nth-of-type(1) {
+        margin: 10px;
+        padding: 10px;
+    }
+
     h1 {
         font-size: 18px;
     }
@@ -153,6 +157,8 @@ li {
         display: flex;
         flex-direction: column;
         border-bottom: none;
+        margin: 0px;
+        padding: 0px;
     }
     footer {
         display: flex;
