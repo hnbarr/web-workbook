@@ -1,5 +1,5 @@
 body {
-    background-color: lightgray;
+    background-image: url(../img/pipes.png);
     width: 100%;
 }
 
@@ -57,10 +57,31 @@ img {
     grid-area: box10;
 }
 
+/* content names */
+
+img {
+    grid-area: img;
+}
+
+p {
+    grid-area: p;
+}
+
+.rating {
+    grid-area: star;
+}
+
+button {
+    grid-area: button;
+    float: right;
+}
+
 /* layout and media change */
 article {
     background-color: whitesmoke;
     border: 1px solid black;
+    margin: 10px;
+    padding: 20px;
 }
 
 .container1 {
@@ -74,6 +95,18 @@ article {
     "box3 box3 box6 box6"
     "box7 box8 box9 box10"
 }
+
+/* desktop content grid layout */
+
+.box1, .box2, .box6 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 3px;
+    grid-template-areas:
+    "img p"
+    "img star"
+}
+
 
 /* tablet view */
 @media (max-width: 768px) {
@@ -97,6 +130,19 @@ article {
         "box8 box9"
         "box10 box10"
     }
+
+    .box {
+        display: block;
+    }
+
+    .box4, .box7, .box10 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 3px;
+        grid-template-areas:
+        "img p"
+        "img star"
+    }
 }
 
 /* phone view */
@@ -116,5 +162,9 @@ article {
         "box8" 
         "box9" 
         "box10"
+    }
+
+    .box {
+        display: block;
     }
 }
