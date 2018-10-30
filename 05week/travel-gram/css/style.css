@@ -12,6 +12,10 @@ img {
     width: 100%;
 }
 
+.checked {
+    color: orange;
+}
+
 /* box names */
 .box1 {
     grid-area: box1;
