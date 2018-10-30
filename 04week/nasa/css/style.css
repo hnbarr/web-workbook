@@ -27,6 +27,7 @@ body {
     justify-content: center;
     color: whitesmoke;
     font-size: 80px;
+    font-weight: bold;
 }
 
 section {
@@ -43,7 +44,12 @@ section {
 
 h3 {
     text-transform: uppercase;
+    font-weight: bold;
     font-size: 18px;
+    margin-bottom: 20px;
+}
+.social, .info, .contact {
+    padding: 20px;
 }
 
 .social >h3 {
@@ -52,6 +58,11 @@ h3 {
 
 li {
     list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 ul {
@@ -64,7 +75,7 @@ ul {
     flex-direction: column;
 }
 
-textarea{
+textarea {
     margin: 0 0 10px 0;
     padding: 10px;
 }
