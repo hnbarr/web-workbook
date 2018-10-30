@@ -1,1 +1,116 @@
+body {
+    background-color: lightgray;
+    width: 100%;
+}
 
+header {
+    text-align: center;
+    font-size: 30px;
+}
+
+img {
+    width: 100%;
+}
+
+/* box names */
+.box1 {
+    grid-area: box1;
+}
+
+.box2 {
+    grid-area: box2;
+}
+
+.box3 {
+    grid-area: box3;
+}
+
+.box4 {
+    grid-area: box4;
+}
+
+.box5 {
+    grid-area: box5;
+}
+
+.box6 {
+    grid-area: box6;
+}
+
+.box7 {
+    grid-area: box7;
+}
+
+.box8 {
+    grid-area: box8;
+}
+
+.box9 {
+    grid-area: box9;
+}
+
+.box10 {
+    grid-area: box10;
+}
+
+/* layout and media change */
+article {
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "box1 box1 box2 box2"
+    "box3 box3 box4 box5"
+    "box3 box3 box4 box5"
+    "box3 box3 box6 box6"
+    "box7 box8 box9 box10"
+}
+
+/* tablet view */
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+    .container1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        grid-template-areas: 
+        "box1 box1"
+        "box1 box1"
+        "box2 box3"
+        "box2 box3"
+        "box4 box4"
+        "box5 box6"
+        "box5 box6" 
+        "box7 box7"
+        "box8 box9"
+        "box8 box9"
+        "box10 box10"
+    }
+}
+
+/* phone view */
+@media (max-width: 576px) {
+    .container1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        grid-template-areas: 
+        "box1" 
+        "box2"
+        "box3"
+        "box4"
+        "box5"
+        "box6"
+        "box7" 
+        "box8" 
+        "box9" 
+        "box10"
+    }
+}
