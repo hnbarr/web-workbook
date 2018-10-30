@@ -11,20 +11,23 @@ header {
     opacity: 0.6;
     position: fixed;
     display: flex;
-    font-size: 14px;
+    justify-content: space-between;
     width: 100%;
+    height: 50px;
     color: #323C50;
-    margin-bottom: 10%;
 }
 
-header a{
+header ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
     text-decoration: none;
     color: #361D14;
 }
 
 aside {
     position: fixed;
-    top: 15%;
+    top: 10%;
     padding: 3%;
 }    
 
@@ -37,20 +40,19 @@ aside {
     color: #323C50;;
 }
 
-h1 {
+h1 > a {
     display: flex;
     justify-content: flex-start;
-    flex: 1;
-    padding-left: 10%;
-
+    font-size: 25px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: #361D14;
 }
 
 nav {
     display: flex;
-    flex: 3;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
     padding-right: 5%;
 }
 
@@ -59,6 +61,7 @@ nav :hover {
 }
 
 ul a {
+    padding: 10px;
     text-decoration: none;
     width: 70px;
     color: #361D14;
@@ -81,11 +84,11 @@ ul a {
 /* each box in order, top-to-bottom */
 
 .box1 {
-    margin-top: 6%;
+    margin-top: 50px;
     border: none;
     background-image: url("../img/bowl.jpg");
     background-size: cover;
-    min-height: 90%;
+    min-height: 60%;
 }
 
 .median {
