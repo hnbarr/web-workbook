@@ -11,15 +11,51 @@ header {
     color: white;
 }
 
+/* default layout and names */
 img {
+    border-radius: 5px;
+    grid-area: img;
     width: 100%;
 }
 
-.checked {
-    color: orange;
+p {
+    grid-area: p;
+    font-size: 16px;
 }
 
-/* box names */
+.active {
+    grid-area: share;
+    display: flex;
+    justify-content: space-between;
+}
+
+article {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    margin-bottom: 0px;
+    padding: 10px;
+}
+
+.container1 {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "box1 box1 box2 box2"
+    "box3 box3 box4 box5"
+    "box3 box3 box4 box5"
+    "box3 box3 box6 box6"
+    "box7 box8 box9 box10"
+}
+
+p {
+    padding: 3px;
+}
+
 .box1 {
     grid-area: box1;
 }
@@ -58,31 +94,15 @@ img {
 
 .box10 {
     grid-area: box10;
-}
-
-/* content names */
-
-img {
-    grid-area: img;
-}
-
-p {
-    grid-area: p;
-}
-
-.active {
-    grid-area: share;
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 /* detail for links and buttons */
 button {
     grid-area: button;
-    height: 70%;
     border: 3px solid black;
     border-radius: 5px;
-    font-size: 13px;
+    font-size: 15px;
     font-family: Architects Daughter;
 }
 
@@ -98,48 +118,34 @@ a{
 }
 
 button:hover {
-    border: 3px solid #4BA964;
-    color:#4BA964;
+    border: 3px solid royalblue;
+    background-color: rgb(104, 134, 224);
+    color: white;
 }
 
-/* layout and media change */
-article {
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 10px;
-}
-
-.container1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-    grid-template-areas: 
-    "box1 box1 box2 box2"
-    "box3 box3 box4 box5"
-    "box3 box3 box4 box5"
-    "box3 box3 box6 box6"
-    "box7 box8 box9 box10"
-}
-
-/* desktop content grid layout */
+/* desktop layout change */
 
 .box1, .box2, .box6 {
+    padding-top: 15px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 2fr;
     grid-gap: 3px;
     grid-template-areas:
     "img p"
     "img share"
 }
 
+.box7, .box8, .box9, .box10 {
+    margin-bottom: 15px;
+}
 
-/* tablet view */
-@media (max-width: 768px) {
+
+/* tablet layout change */
+@media (max-width: 800px) {
     body {
         width: 100%;
     }
+
     .container1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -160,9 +166,11 @@ article {
 
     .box {
         display: block;
+        margin: 0 auto;
     }
 
-    .box4, .box7, .box10 {
+    .box4 {
+        /* i also had .box 7 & .box 10 in here, to keep the same format, but it wasn't cute */
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-gap: 3px;
@@ -172,7 +180,7 @@ article {
     }
 }
 
-/* phone view */
+/* phone layout change */
 @media (max-width: 576px) {
     .container1 {
         display: grid;
