@@ -1,11 +1,14 @@
 body {
-    background-image: url(../img/pipes.png);
+    background-image: url(../img/yel.jpg);
+    background-size: cover;
     width: 100%;
+    font-family: Architects Daughter;
 }
 
 header {
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
+    color: white;
 }
 
 img {
@@ -67,21 +70,45 @@ p {
     grid-area: p;
 }
 
-.rating {
-    grid-area: star;
+.active {
+    grid-area: share;
+    display: flex;
+    justify-content: space-between;
 }
 
+/* detail for links and buttons */
 button {
     grid-area: button;
-    float: right;
+    height: 70%;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: Architects Daughter;
+}
+
+a{
+    color: black;
+}
+.fa-heart:hover {
+   color: red;
+}
+
+.fa-thumbs-up:hover {
+   color: royalblue;
+}
+
+button:hover {
+    border: 3px solid #4BA964;
+    color:#4BA964;
 }
 
 /* layout and media change */
 article {
-    background-color: whitesmoke;
+    background-color: white;
     border: 1px solid black;
-    margin: 10px;
-    padding: 20px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
 }
 
 .container1 {
@@ -104,7 +131,7 @@ article {
     grid-gap: 3px;
     grid-template-areas:
     "img p"
-    "img star"
+    "img share"
 }
 
 
@@ -141,7 +168,7 @@ article {
         grid-gap: 3px;
         grid-template-areas:
         "img p"
-        "img star"
+        "img share"
     }
 }
 
