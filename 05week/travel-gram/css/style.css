@@ -33,7 +33,7 @@ article {
     background-color: white;
     border: 1px solid black;
     border-radius: 5px;
-    margin: 5px;
+    margin: 10px;
     margin-bottom: 0px;
     padding: 10px;
 }
@@ -166,7 +166,7 @@ button:hover {
 
     .box {
         display: block;
-        margin: 0 auto;
+        margin: 5px;
     }
 
     .box4 {
@@ -201,5 +201,6 @@ button:hover {
 
     .box {
         display: block;
+        margin: 5px;
     }
 }
