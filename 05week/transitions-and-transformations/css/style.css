@@ -1,0 +1,44 @@
+body {
+    width: 10%;
+    margin: 0 auto;
+}
+
+.trigger{
+    width: 70px;
+    margin: 0 auto;
+    border: 2px solid lightgray;
+}
+
+section {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    transition: all 2s linear; 
+    /* we did use ease-in-out but linear works cleaner */
+}
+
+/* odd todds */
+.trigger:hover section:nth-child(odd){
+    transform: translate(500px) rotate(360deg) scale(1.5);
+    transition: all 2s linear;
+}
+
+/* even stevens */
+.trigger:hover section:nth-child(even){
+    transform: translate(-500px) rotate(-360deg) scale(0.5);
+    transition: all 2s linear;
+}
+
+/* colors */
+
+#pink {
+    background-color: lightpink;
+}
+
+#purple {
+    background-color: plum;
+}
+
+#red {
+    background-color: red;
+}
