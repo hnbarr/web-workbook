@@ -20,7 +20,7 @@ img {
 
 p {
     grid-area: p;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .active {
@@ -28,14 +28,14 @@ p {
     display: flex;
     justify-content: space-between;
 }
-
-article {
+.box{
     background-color: white;
     border: 1px solid black;
     border-radius: 5px;
     margin: 10px;
     margin-bottom: 0px;
-    padding: 10px;
+    padding: 20px;
+    box-shadow: inset 0 0 8px black;
 }
 
 .container1 {
@@ -102,7 +102,7 @@ button {
     grid-area: button;
     border: 3px solid black;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 17px;
     font-family: Architects Daughter;
 }
 
@@ -199,8 +199,8 @@ button:hover {
         "box10"
     }
 
-    .box {
-        display: block;
-        margin: 5px;
+    .tablet {
+        display: none;
     }
+
 }
