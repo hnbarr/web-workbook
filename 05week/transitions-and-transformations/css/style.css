@@ -1,0 +1,87 @@
+body {
+    background-image: url(../img/grph.jpg);
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.trigger{
+    width: 60px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+section {
+    box-shadow: inset 0 0 5px black;
+    height: 50px;
+    border-radius: 18px;
+    font-size: 30px;
+    width: 50px;
+    margin: 5px;
+    transition: all 3s linear; 
+    /* we did use ease-in-out but linear works cleaner */
+}
+
+/* odd todds */
+.trigger:hover section:nth-child(odd){
+    transform: translate(500px) rotate(360deg) scale(1.5);
+    transition: all 3s linear;
+}
+
+/* even stevens */
+.trigger:hover section:nth-child(even){
+    transform: translate(-500px) rotate(-360deg) scale(0.5);
+    transition: all 3s linear;
+}
+
+
+/* colors */
+
+#one {
+    background-color:#1495BA;
+}
+
+#two {
+    background-color: #0F7899;
+}
+
+#three {
+    background-color: #0F5B78;
+}
+
+#four {
+    background-color: #0D3B55;
+}
+
+#five {
+    background-color: #C02E1D;
+}
+
+#six {
+    background-color: #D94E1F;
+}
+
+#seven {
+    background-color: #F16C21;
+}
+
+#eight {
+    background-color: #EF8B2C;
+}
+
+#nine {
+    background-color: #ECAA39;
+}
+
+#ten {
+    background-color: #ECC844;
+}
+
+#eleven {
+    background-color: #A2B86C;
+}
+
+#twelve {
+    background-color: #5CA793;
+}
