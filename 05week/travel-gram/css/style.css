@@ -1,1 +1,206 @@
+body {
+    background-image: url(../img/yel.jpg);
+    background-size: cover;
+    width: 100%;
+    font-family: Architects Daughter;
+}
 
+header {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+/* default layout and names */
+img {
+    border-radius: 5px;
+    grid-area: img;
+    width: 100%;
+}
+
+p {
+    grid-area: p;
+    font-size: 18px;
+}
+
+.active {
+    grid-area: share;
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    margin-bottom: 0px;
+    padding: 20px;
+    box-shadow: inset 0 0 8px black;
+}
+
+.container1 {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "box1 box1 box2 box2"
+    "box3 box3 box4 box5"
+    "box3 box3 box4 box5"
+    "box3 box3 box6 box6"
+    "box7 box8 box9 box10"
+}
+
+p {
+    padding: 3px;
+}
+
+.box1 {
+    grid-area: box1;
+}
+
+.box2 {
+    grid-area: box2;
+}
+
+.box3 {
+    grid-area: box3;
+}
+
+.box4 {
+    grid-area: box4;
+}
+
+.box5 {
+    grid-area: box5;
+}
+
+.box6 {
+    grid-area: box6;
+}
+
+.box7 {
+    grid-area: box7;
+}
+
+.box8 {
+    grid-area: box8;
+}
+
+.box9 {
+    grid-area: box9;
+}
+
+.box10 {
+    grid-area: box10;
+    margin-bottom: 15px;
+}
+
+/* detail for links and buttons */
+button {
+    grid-area: button;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: Architects Daughter;
+}
+
+a{
+    color: black;
+}
+.fa-heart:hover {
+   color: red;
+}
+
+.fa-thumbs-up:hover {
+   color: royalblue;
+}
+
+button:hover {
+    border: 3px solid royalblue;
+    background-color: rgb(104, 134, 224);
+    color: white;
+}
+
+/* desktop layout change */
+
+.box1, .box2, .box6 {
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 3px;
+    grid-template-areas:
+    "img p"
+    "img share"
+}
+
+.box7, .box8, .box9, .box10 {
+    margin-bottom: 15px;
+}
+
+
+/* tablet layout change */
+@media (max-width: 800px) {
+    body {
+        width: 100%;
+    }
+
+    .container1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        grid-template-areas: 
+        "box1 box1"
+        "box1 box1"
+        "box2 box3"
+        "box2 box3"
+        "box4 box4"
+        "box5 box6"
+        "box5 box6" 
+        "box7 box7"
+        "box8 box9"
+        "box8 box9"
+        "box10 box10"
+    }
+
+    .box {
+        display: block;
+        margin: 5px;
+    }
+
+    .box4 {
+        /* i also had .box 7 & .box 10 in here, to keep the same format, but it wasn't cute */
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 3px;
+        grid-template-areas:
+        "img p"
+        "img share"
+    }
+}
+
+/* phone layout change */
+@media (max-width: 576px) {
+    .container1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        grid-template-areas: 
+        "box1" 
+        "box2"
+        "box3"
+        "box4"
+        "box5"
+        "box6"
+        "box7" 
+        "box8" 
+        "box9" 
+        "box10"
+    }
+
+    .tablet {
+        display: none;
+    }
+
+}
