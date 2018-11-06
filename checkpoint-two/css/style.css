@@ -1,1 +1,93 @@
+.box1 {
+    grid-area: box1;
+    /* background-color: #10e88a; */
+}
 
+.box2 {
+    grid-area: box2;
+    /* background-color: #7f3995; */
+}
+
+.box3 {
+    grid-area: box3;
+    /* background-color: #0d78e7; */
+}
+
+.box4 {
+    grid-area: box4;
+    /* background-color: #f88f18; */
+}
+
+body {
+    background:#10e88a; 
+    color:#fff; 
+    font-family: 'Roboto', sans-serif; 
+    margin: 0 auto;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "box1 ."
+    ". box2"
+    ". box3"
+    ". box4"
+}
+
+.box {
+    border-top: 1px solid #88fac8;
+    width: 100%;
+    height: 100vh;
+}
+
+.box1, .box2, .box3, .box4 {
+    text-align: right;
+}
+
+header {
+    height: 100vh;
+}
+
+h1{
+    font-size:100px; 
+    font-weight:900; 
+    margin:0x 25px;
+    width: 100%;
+    text-shadow: 2px 2px green;
+}
+
+h2 {
+    font-size:140px; 
+    font-weight:900; 
+    margin:0px 25px;
+}
+
+h3{
+    font-size: 40px;
+    font-weight: 900;
+    color: #88fac8;
+    margin-left: 50px;
+    text-shadow: 1px 1px green;
+    width: 100%;
+}
+b {
+    color: white;
+    font-size: 50px;
+    text-shadow: 1px 1px green;
+}
+
+p { 
+    padding: 3px;
+    font-size: 20px; 
+}
+
+/* color changes on scroll *attempt* */
+
+.colorinital:after {
+    background-color: #10e88a;
+}
+
+.colorchange1:after {
+    background-color: #7f3995;
+}
