@@ -1,8 +1,40 @@
 body {
-    background-color: lightblue;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-family: Bubblegum Sans; 
 }
 
-p1, p2 {
+header {
+    margin: 50px;
+}
+
+.button {
+    margin: 30px;
+}
+
+header h1{
+    margin: 10px 300px;
+    text-align: center;
+    font-size: 45px;
+    color: #002E55;
+    border-bottom: 1px solid white;
+}
+
+.button input{
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 10px 5px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: #002E55;
+}
+
+.button input:hover {
+    background-color: #002E55;
+    border: none;
     color: white;
-    font-size: 20px;
 }
