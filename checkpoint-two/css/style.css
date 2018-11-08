@@ -52,7 +52,7 @@ h1{
     font-weight:900; 
     margin-left: 50px;
     width: 100%;
-    text-shadow: 2px 2px green;
+    text-shadow: 2px 2px #D9DADC;
 }
 
 h2 {
@@ -64,21 +64,22 @@ h2 {
 h3{
     font-size: 40px;
     font-weight: 900;
-    color: #88fac8;
+    color: #29B4E5;
     margin-left: 50px;
-    text-shadow: 1px 1px darkolivegreen;
+    text-shadow: 1px 1px #002E55;
     width: 100%;
 }
 
 nav {
-    /* need to make this fit across screen */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     width: 100%;
     background-color: darkolivegreen;
 }
 
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 b {
     color: white;
     font-size: 50px;
