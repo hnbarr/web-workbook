@@ -1,27 +1,25 @@
 .box1 {
     grid-area: box1;
-    background-color: #10e88a;
+    background-color: white;
 }
 
 .box2 {
     grid-area: box2;
-    background-color: #7f3995;
+    background-color: #F5F5F5;
 }
 
 .box3 {
     grid-area: box3;
-    background-color: #0d78e7;
+    background-color: white;
 }
 
 .box4 {
     grid-area: box4;
-    background-color: #f88f18;
+    background-color: #F5F5F5;
 }
 
 body {
     background: lightblue; 
-    /* background-image: url(../img/game.gif);
-    background-size: cover; */
     color:#fff; 
     font-family: 'Roboto', sans-serif; 
     margin: 0 auto;
@@ -38,9 +36,10 @@ body {
 }
 
 .box {
-    border-top: 1px solid #88fac8;
+    /* border-top: 3px solid #88fac8; */
     height: 100vh;
     text-align: right;
+    color: darkslategray;
 }
 
 header {
@@ -67,9 +66,19 @@ h3{
     font-weight: 900;
     color: #88fac8;
     margin-left: 50px;
-    text-shadow: 1px 1px green;
+    text-shadow: 1px 1px darkolivegreen;
     width: 100%;
 }
+
+nav {
+    /* need to make this fit across screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: darkolivegreen;
+}
+
 b {
     color: white;
     font-size: 50px;
