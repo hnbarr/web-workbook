@@ -24,11 +24,8 @@
 var p1;
 var p2;
 
-
 p1 = prompt("Player One- Rock, Paper or Scissors");
 p2 = prompt("Player Two- Rock, Paper or Scissors");
-
-
 
 function rps(p1, p2){
     if(p1 === p2){
