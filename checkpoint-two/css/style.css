@@ -1,25 +1,27 @@
 .box1 {
     grid-area: box1;
-    /* background-color: #10e88a; */
+    background-color: #10e88a;
 }
 
 .box2 {
     grid-area: box2;
-    /* background-color: #7f3995; */
+    background-color: #7f3995;
 }
 
 .box3 {
     grid-area: box3;
-    /* background-color: #0d78e7; */
+    background-color: #0d78e7;
 }
 
 .box4 {
     grid-area: box4;
-    /* background-color: #f88f18; */
+    background-color: #f88f18;
 }
 
 body {
-    background:#10e88a; 
+    background: lightblue; 
+    /* background-image: url(../img/game.gif);
+    background-size: cover; */
     color:#fff; 
     font-family: 'Roboto', sans-serif; 
     margin: 0 auto;
@@ -27,12 +29,12 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: 
-    ". box1"
-    ". box2"
-    ". box3"
-    ". box4"
+    "box1"
+    "box2"
+    "box3"
+    "box4"
 }
 
 .box {
