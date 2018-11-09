@@ -1,33 +1,4 @@
-/* section names */
-.box1 {
-    grid-area: box1;
-    background-color:#FBF8D4;
-    color:#242B5C;
-}
-
-.box2 {
-    grid-area: box2;
-    background-color: #BDBDB1;
-}
-
-.box3 {
-    grid-area: box3;
-    background-color: #DF4E63;
-}
-.box3 h2 {
-    color:#FBF8D4 !important;
-}
-
-.box4 {
-    grid-area: box4;
-    background-color: #FBF8D4;
-}
-
-#nav {
-    grid-area: navv;
-}
-
-/* deets */
+/* header */
 
 body {
     color:#FBF8D4; 
@@ -36,6 +7,7 @@ body {
 }
 
 header {
+    /* height: 100vh; */
     grid-area: head;
     background: #DBE7B2; 
     margin: 0;
@@ -55,6 +27,8 @@ header {
 }
 
 .hero {
+    height: 650px;
+    width: 500px;
     margin-top: 15px;
     grid-area: pic;
     display: flex;
@@ -80,7 +54,11 @@ b {
     text-shadow: 2px 2px #DF4E63;
 }
 
-/* nav only */
+/* nav */
+#nav {
+    grid-area: navv;
+}
+
 .navbar {
     margin: 0 auto;
     background-color: darkolivegreen;
@@ -114,7 +92,32 @@ a:hover {
     border-radius: 12px;
 }
 
-/* body */
+/* body details */
+.box1 {
+    grid-area: box1;
+    background-color:#242B5C;
+    color:#DF4E63;
+    padding-bottom: 30px;
+}
+
+.box2 {
+    grid-area: box2;
+    background-color: #DF4E63;
+    color: #242B5C;
+    padding-bottom: 40px;
+}
+
+.box3 {
+    grid-area: box3;
+    background-color: #FBF8D4;
+    color: #242B5C;
+}
+
+.box4 {
+    grid-area: box4;
+    background-color: #DBE7B2;
+    color: #242B5C;
+}
 
 .container {
     display: grid;
@@ -122,22 +125,21 @@ a:hover {
     grid-template-areas: 
     "head head"
     "head head"
-    "box1 box2"
-    "box1 box2"
     "box3 box3"
+    "box2 box1"
+    "box2 box1"
     "box4 box4"
 }
 
 .box {
-    height: 100vh;
     text-align: right;
 }
 
 h2 {
-    font-size:140px; 
+    font-size:120px; 
     font-weight:900; 
     margin: 30px 25px;
-    color: #DF4E63;
+    /* color: #DF4E63; */
 }
 
 p { 
@@ -145,14 +147,57 @@ p {
     font-size: 20px; 
 }
 
-/* sections */
+/* work */
+#h2work {
+    grid-area: worktitle;
+}
+#biopage {
+    grid-area: bio;
+    width: 400px;
+    height: 200px;
+}
+#rpsgame {
+    grid-area: rps;
+    width: 400px;
+    height: 200px;
+}
+
+#techtom {
+    grid-area: tech;
+    width: 400px;
+    height: 200px;
+}
+
+#popssite {
+    grid-area: pops;
+    width: 400px;
+    height: 200px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    display: flex;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "worktitle worktitle"
+    "bio rps"
+    "tech pops"
+}
+
+/* skills */
 
 .box2 h4 {
     text-align: left;
     padding: 5px 40px;
     text-transform: uppercase;
     margin: 10px;
-    color: #242B5C;
+    color: #DBE7B2;
     font-size: 20px;
 }
 
@@ -229,13 +274,14 @@ p {
 }
 
 /*  queries */
+
 /* tablet */
 @media (max-width: 929px){
     body {
         width: 100%;
     }
 }
-
+/* mobile */
 @media (max-width: 550px){
     body {
         width: 100;
@@ -251,13 +297,15 @@ p {
     }
 
     .container {
+        width: 100%;
+        margin: 0;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
         "head"
-        "box1"
         "box2"
         "box3"
+        "box1"
         "box4"
         "box5"
     }
