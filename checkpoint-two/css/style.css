@@ -18,6 +18,7 @@ header {
 
 #top {
     grid-area: title;
+    margin: 0 auto;
     padding: 40px 10px;
     display: flex;
     justify-content: center;
@@ -59,10 +60,11 @@ b {
 .navbar {
     position: relative;
     margin: 0 auto;
-    background-color: darkolivegreen;
+    background-color:#DBE7B2;
     padding: 10px;
     position: fixed;
     width: 100%;
+    border-bottom: 2px solid #F6F7D3;
 }
 
 nav ul {
@@ -81,14 +83,13 @@ nav li {
 nav a {
     text-decoration: none;
     padding: 5px 10px;
-    color: #FBF8D4;
+    color: #242B5C;
 }
 
 nav a:hover {
     color: #DF4E63;
-    background-color: #DBE7B2;
-    opacity: .6;
     border-radius: 12px;
+    font-size: 20px;
 }
 
 /* body details */
@@ -333,9 +334,14 @@ footer {
 /*  queries */
 
 /* tablet */
-@media (max-width: 929px){
-    body {
+@media (max-width: 1080px){
+    .container {
         width: 100%;
+    }
+
+    .hero img {
+        height: 600px;
+        width: 500px;
     }
 
     footer {
@@ -357,9 +363,18 @@ footer {
         "pic"
     }
 
+    .hero {
+        margin: 0 auto;
+    }
+
+    #top {
+        margin-top: 20px;
+    }
+
     .container {
         width: 100%;
         margin: 0;
+        padding: 0;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
