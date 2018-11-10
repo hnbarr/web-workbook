@@ -7,7 +7,6 @@ body {
 }
 
 header {
-    /* height: 100vh; */
     grid-area: head;
     background: #DBE7B2; 
     margin: 0;
@@ -31,8 +30,6 @@ header {
     width: 500px;
     margin-top: 15px;
     grid-area: pic;
-    display: flex;
-    justify-content: center;
 }
 
 h1 {
@@ -60,6 +57,7 @@ b {
 }
 
 .navbar {
+    position: relative;
     margin: 0 auto;
     background-color: darkolivegreen;
     padding: 10px;
@@ -68,6 +66,7 @@ b {
 }
 
 nav ul {
+    position: relative;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 3fr;
@@ -75,17 +74,17 @@ nav ul {
     "navv navv navv navv navv."
 }
 
-li {
+nav li {
     list-style-type: none;
 }
 
-a {
+nav a {
     text-decoration: none;
     padding: 5px 10px;
     color: #FBF8D4;
 }
 
-a:hover {
+nav a:hover {
     color: #DF4E63;
     background-color: #DBE7B2;
     opacity: .6;
@@ -129,6 +128,7 @@ a:hover {
     "box2 box1"
     "box2 box1"
     "box4 box4"
+    "footer footer"
 }
 
 .box {
@@ -139,39 +139,49 @@ h2 {
     font-size:120px; 
     font-weight:900; 
     margin: 30px 25px;
-    /* color: #DF4E63; */
 }
 
 p { 
-    padding: 3px;
-    font-size: 20px; 
+    padding: 30px;
+    font-size: 23px; 
+}
+
+/* about */
+
+.box3 {
+    padding-bottom: 20px;
+}
+
+.box3 p {
+    width: 70%;
+    margin-left: 40px;
+    line-height: 2;
 }
 
 /* work */
 #h2work {
     grid-area: worktitle;
 }
+
 #biopage {
     grid-area: bio;
-    width: 400px;
-    height: 200px;
 }
 #rpsgame {
     grid-area: rps;
-    width: 400px;
-    height: 200px;
 }
 
 #techtom {
     grid-area: tech;
-    width: 400px;
-    height: 200px;
 }
 
 #popssite {
     grid-area: pops;
-    width: 400px;
-    height: 200px;
+}
+
+.projects img {
+    padding: 3px;
+    width: 375px;
+    height: 180px;
 }
 
 .projects {
@@ -255,15 +265,15 @@ p {
 .line3:after {
     text-align: right;
     padding-right: 10px;
-    content: '85%';
-    max-width: 85%;
+    content: '80%';
+    max-width: 80%;
 }
 
 .line4:after {
     text-align: right;
     padding-right: 10px;
-    content: '90%';
-    max-width: 90%;
+    content: '85%';
+    max-width: 85%;
 }
 
 .line5:after {
@@ -272,12 +282,63 @@ p {
     content: '70%';
     max-width: 70%;
 }
+/* contact */
+.me {
+    grid-area: profile;
+    width: 40%;
+    margin: 0px 10px 50px 20px;
+}
+
+.contact {
+    grid-area: contact;
+}
+.box4 h2 {
+    grid-area: contacttitle;
+    height: 70px;
+}
+
+.box4 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    ". contacttitle"
+    "profile contact"
+    "profile contact"
+}
+
+/*  footer  */
+
+footer {
+    grid-area: footer;
+    background-color: #242B5C;
+    width: 100%;
+    padding: 10px 0px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.far, .fas, .fab{
+    color: #DBE7B2;
+    padding: 10px 60px;
+}
+
+.far:hover, .fas:hover, .fab:hover {
+    color: #DF4E63;
+}
+
 
 /*  queries */
 
 /* tablet */
 @media (max-width: 929px){
     body {
+        width: 100%;
+    }
+
+    footer {
         width: 100%;
     }
 }
@@ -308,5 +369,6 @@ p {
         "box1"
         "box4"
         "box5"
+        "footer"
     }
 }
