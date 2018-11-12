@@ -283,7 +283,7 @@ p {
 /* contact */
 
 .box4 {
-    padding-bottom: 105px;
+    padding-bottom: 100px;
 }
 .melon {
     grid-area: profile;
@@ -299,7 +299,7 @@ p {
 
 #links {
     grid-area: buttons;
-    padding-top: 20px;
+    padding-top: 50px;
     text-align: center;
 }
 
