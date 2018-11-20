@@ -1,20 +1,22 @@
 'use strict';
+// comand f to replace all names or classes
 
 window.onload=function() {
 
   let listTotal = document.getElementsByTagName('ul');
   let message = listTotal[0].children.length;
   // alert(message);
+  // uncomment line 8 to activate alert.
 
 
-  // create ability to add more items to list
+  // calling all functions onload.
   createNewField();
   addingButtonToList();
   itemCount();
   updateItemCount();
 
 };
-
+// Items in Cart Statement.
 function itemCount(){
   let h2baby = document.createElement('h2');
   h2baby.setAttribute("id", "title");
@@ -22,8 +24,8 @@ function itemCount(){
 }
 
 function updateListCountSentance(){
-  let newTest = document.getElementById('test');
-  return "You have " + newTest.children.length + " items in your shopping cart.";
+  let newList = document.getElementById('list');
+  return "You have " + newList.children.length + " items in your shopping cart.";
 }
 
 function updateItemCount(){
@@ -32,17 +34,16 @@ function updateItemCount(){
   string.innerHTML = update; 
 }
 
-  
-
+// text box and button to add
 function createNewField(){
   let newInput = document.createElement('input');
     newInput.setAttribute("id", 'item-text');
     document.getElementsByTagName('ul')[0].after(newInput);
-    newInput.setAttribute("placeholder", "Type to add Item");
+    newInput.setAttribute("placeholder", "Type to Add Item");
   let addbutton = document.createElement('button');
     addbutton.setAttribute("id", 'new-button');
     document.getElementById('item-text').after(addbutton);
-    addbutton.innerHTML = "add item";
+    addbutton.innerHTML = "Add To Cart";
     addbutton.onclick = addItemsToExistingList;
 }
 
@@ -50,33 +51,29 @@ function createNewField(){
 function addItemsToExistingList(event){
   let userInput = document.getElementById('item-text').value;
   let textVal = document.createElement('li');
-  textVal.innerHTML = userInput;
-  document.getElementById('test').appendChild(textVal);
+    textVal.innerHTML = userInput;
+    document.getElementById('list').appendChild(textVal);
   deleteButtonByEachLi(textVal);
   updateItemCount();
 }
 
-//  append/create button on exitsing and new li's with forloop
+//  create button on exitsing and new li's with forloop
 function deleteButtonByEachLi(appendElement){
   let removeButton = document.createElement('button');
     removeButton.setAttribute("id", "li-bye-bye");
-    removeButton.innerHTML = "Remove Item";
+    removeButton.innerHTML = "Delete";
     appendElement.appendChild(removeButton);
-
-
-    removeButton.onclick = deleteItem;
+    removeButton.onclick = deleteItem; 
   }
-
-  function addingButtonToList(){
-    let list = document.getElementById('test');
+function addingButtonToList(){
+  let list = document.getElementById('list');
     for(let i=0; i < list.children.length; i++){
-    deleteButtonByEachLi(list.children[i]);
+  deleteButtonByEachLi(list.children[i]);
     }
   }
  
-// now to remove items from my list with onclick
-
-  function deleteItem() {
+// removing the li once Delete Button clicked
+function deleteItem() {
   this.parentNode.remove(this);
   updateItemCount();
 
