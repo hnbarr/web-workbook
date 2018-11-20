@@ -5,16 +5,34 @@ window.onload=function() {
   let listTotal = document.getElementsByTagName('ul');
   let message = listTotal[0].children.length;
   // alert(message);
-  let h2baby = document.createElement('h2');
-  h2baby.innerHTML = "You have " + listTotal[0].children.length + " items in your shopping cart.";
-  document.getElementsByTagName('h1')[0].after(h2baby);
+
 
   // create ability to add more items to list
   createNewField();
   addingButtonToList();
+  itemCount();
+  updateItemCount();
 
 };
 
+function itemCount(){
+  let h2baby = document.createElement('h2');
+  h2baby.setAttribute("id", "title");
+  document.getElementsByTagName('h1')[0].after(h2baby);
+}
+
+function updateListCountSentance(){
+  let newTest = document.getElementById('test');
+  return "You have " + newTest.children.length + " items in your shopping cart.";
+}
+
+function updateItemCount(){
+  let update = updateListCountSentance();
+  let string = document.getElementById('title');
+  string.innerHTML = update; 
+}
+
+  
 
 function createNewField(){
   let newInput = document.createElement('input');
@@ -35,6 +53,7 @@ function addItemsToExistingList(event){
   textVal.innerHTML = userInput;
   document.getElementById('test').appendChild(textVal);
   deleteButtonByEachLi(textVal);
+  updateItemCount();
 }
 
 //  append/create button on exitsing and new li's with forloop
@@ -43,6 +62,9 @@ function deleteButtonByEachLi(appendElement){
     removeButton.setAttribute("id", "li-bye-bye");
     removeButton.innerHTML = "Remove Item";
     appendElement.appendChild(removeButton);
+
+
+    removeButton.onclick = deleteItem;
   }
 
   function addingButtonToList(){
@@ -52,4 +74,10 @@ function deleteButtonByEachLi(appendElement){
     }
   }
  
-// now to remove items from my list with onclick, like add button function.
+// now to remove items from my list with onclick
+
+  function deleteItem() {
+  this.parentNode.remove(this);
+  updateItemCount();
+
+}
