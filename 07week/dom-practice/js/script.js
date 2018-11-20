@@ -27,15 +27,16 @@ window.onload=function() {
       document.getElementById('item-text').after(addbutton);
       addbutton.innerHTML = "add item";
       addbutton.onclick = addItemsExistingList;
-
   }
 
-  function addItemsToExistingList(event){
+  function addItemsToExistingList(onclick){
     let userInput = document.getElementById('item-text').value;
-    return(addItemsToExistingList);
+    // attampt to add item-text as a li onclick.
+    document.getElementsByTagName('li')[0].after(userInput);
+    // not working...
+    
 
-  }
-hello 
+  } 
 
 
 };
