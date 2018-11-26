@@ -85,48 +85,54 @@ button:hover{
     background-color: lightpink;
 }
 
+h5 {
+    text-align: left;
+    color: #6E3C40; 
+    font-size: 13px; 
+}
+/* I took out these selectors bc I dont like to use them, but not delete them to show I know what and how to use them! */
 /* css for week 1 */
-.week:nth-of-type(1) > p:nth-child(4){
+/* .week:nth-of-type(1) > p:nth-child(4){
     text-align: left;
     color: blueviolet;
-}
+} */
 
 /* css for week 2 */
-.week:nth-of-type(2) > p:nth-child(4){
+/* .week:nth-of-type(2) > p:nth-child(4){
     text-align: left;
     color: purple;
-}
+} */
 
-.week:nth-of-type(2) > p:nth-child(12){
+/* .week:nth-of-type(2) > p:nth-child(12){
     text-align: left;
     color: plum;
-}
+} */
 
 /*  css for week 3 */
-.week:nth-of-type(3) > p:nth-child(4){
+/* .week:nth-of-type(3) > p:nth-child(4){
     text-align: left;
     color: blueviolet;
-}
+} */
 
-.week:nth-of-type(3) > p:nth-child(10){
+/* .week:nth-of-type(3) > p:nth-child(10){
     text-align: left;
     color: plum;
-}
+} */
 /* css for week 4 */
-.week:nth-of-type(4) > p:nth-child(4){
+/* .week:nth-of-type(4) > p:nth-child(4){
     text-align: left;
     color: purple;
-}
+} */
 
-.week:nth-of-type(4) > p:nth-child(10){
+/* .week:nth-of-type(4) > p:nth-child(10){
     text-align: left;
     color: plum;
-}
+} */
 
 /* footer only */
 footer {
     position: fixed;
-    background-color: #2B2E46;
+    background-color: #061D24;
     width: 100%;
     padding: 10px 0px;
     right: 0;
