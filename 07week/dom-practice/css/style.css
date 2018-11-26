@@ -8,8 +8,10 @@ p {
 }
 button {
     padding: 3px;
+    margin: 4px;
     border-radius: 5px;
     background-color: #c5c5c5;
+    border: 1px solid black;
 }
 #title {
     font-size: 20px;
@@ -18,8 +20,10 @@ button {
 #list {
     float: right;
     margin: 0 auto;
+    font-size: 14px;
     width: 40%;
     border: 1px solid black;
+    background-color: #e6e6e6;
     padding: 10px 30px;
 }
 #item-text {

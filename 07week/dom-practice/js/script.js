@@ -8,7 +8,6 @@ window.onload=function() {
   // alert(message);
   // uncomment line 8 to activate alert.
 
-
   // calling all functions onload.
   createNewField();
   addingButtonToList();
