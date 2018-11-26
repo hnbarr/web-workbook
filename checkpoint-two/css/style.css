@@ -27,10 +27,10 @@ header {
 }
 
 .hero {
+    grid-area: pic;
     height: 650px;
     width: 500px;
-    margin-top: 15px
-    grid-area: pic;
+    margin-top: 15px;
 }
 
 h1 {
@@ -169,7 +169,7 @@ p {
     grid-area: rps;
 }
 
-#techtom {
+#landing {
     grid-area: tech;
 }
 
