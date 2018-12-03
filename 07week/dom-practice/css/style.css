@@ -1,0 +1,36 @@
+body {
+    background-color: whitesmoke;
+    margin: 0 auto;
+    width: 75%;
+}
+p {
+    padding: 15px;
+}
+button {
+    padding: 3px;
+    margin: 4px;
+    border-radius: 5px;
+    background-color: #c5c5c5;
+    border: 1px solid black;
+}
+#title {
+    font-size: 20px;
+    text-align: right;
+}
+#list {
+    float: right;
+    margin: 0 auto;
+    font-size: 14px;
+    width: 40%;
+    border: 1px solid black;
+    background-color: #e6e6e6;
+    padding: 10px 30px;
+}
+#item-text {
+    width: 30%;
+}
+li {
+    padding: 3px;
+}
+
+/* not much css here */
