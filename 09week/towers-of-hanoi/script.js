@@ -1,7 +1,7 @@
 'use strict';
 
 $(document).ready(function() {
-  console.log("hello");
+  // console.log("hello");
   // to drag blocks!
     $('.draggable').draggable({
       revert: 'invalid'
