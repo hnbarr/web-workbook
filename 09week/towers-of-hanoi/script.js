@@ -27,6 +27,5 @@ $(document).ready(function() {
       $('#announce').text("Congrats! You've completed the game!")
   }
   }
-  
 
 });
