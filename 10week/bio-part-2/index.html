@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Register With Us!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    <script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+    <form action="" name="registration">
+        <h2> Sign Up </h2>
+        <hr>
+    <div class="content">
+    <!-- name -->
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" id="firstname" placeholder="Type Here" spellcheck="true">
+        <br>
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Type Here" spellcheck="true">
+        <br>
+    <!-- url -->
+        <label for="website">Website</label>
+        <input type="url" name="url" id="url" placeholder="Social Media or Resume Link" pattern="https://.*" size="30">
+        <br>
+    <!-- email -->
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Full Email Address">
+        <br>
+    <!-- password -->
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="8 characters minimum" minlength="8"> 
+        <hr>
+        <!-- checkboxes -->
+        <h3>Subscribe Here</h3>
+        <div class="checkboxes">
+            <label for="check1">Updates</label>
+            <input type="checkbox" id="updates" name="sub">
+            <label for="check2">Promotions</label>
+            <input type="checkbox" id="promotions" name="sub">
+            <label for="check3">News</label>
+            <input type="checkbox" id="news" name="sub">
+        </div>
+        <br>
+    <!-- range -->
+        <h3>JavaScript Knowledge</h3>
+        <input type="range" id="start" name="know" min="0" max="10">
+        <br>
+    <!-- radio -->
+        <span class="radio">
+            <label for="choice1">Male</label>
+            <input type="radio" id="male" value="male" name="sex">
+        
+            <label for="choice2">Female</label>
+            <input type="radio" id="female" value="female" name="sex">
+        
+            <label for="choice3">Other</label>
+            <input type="radio" id="other" value="other" name="sex">
+        </span>
+
+    <!-- buttons -->
+        <div class="buttons">
+            <button type="submit">Register Now</button>
+            <br>
+            <button type="reset">Clear</button>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="./js/script.js"></script>
+    
+
+    
+</body>
+</html>
