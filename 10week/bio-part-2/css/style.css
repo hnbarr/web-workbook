@@ -7,7 +7,7 @@ body {
     margin: 0 auto;
     margin-top: 20px;
     width: 500px;
-    padding: 20px;
+    padding: 10px;
 }
 
 h2 {
@@ -16,20 +16,38 @@ h2 {
     padding: 10px;
 }
 
-label, input {
-    padding: 3px;
+label, input, button {
+    border: 0;
+    margin-bottom: 3px;
+    display: block;
+    width: 98%;
 }
 
-.buttons {
-    display: flex;
-    justify-content: center;
+input {
+    height: 25px;
+    line-height: 25px;
+    padding: 0 6px;
 }
+
 
 button {
-    background-color: #4BAFC6;
-    color: white;
-    padding: 10px;
-    width: 150px;
-    font-size: 15px;
+      padding: 10px;  
 }
 
+.radio {
+      padding: 5px;
+      display: block;
+}
+
+.checkboxes, .radio {
+      display: flex;
+}
+h3 {
+    text-align: center;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+messages {
+    color: red;
+}

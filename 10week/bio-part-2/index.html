@@ -7,40 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    <script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
     
 </head>
 <body>
     <div class="container">
+    <form action="" name="registration">
         <h2> Sign Up </h2>
         <hr>
-        <form action="" name="registration"></form>
     <div class="content">
+    <!-- name -->
         <label for="firstname">First Name</label>
-        <input type="text" name="firstname" id="firstname" placeholder="Type Here" spellcheck="true" required>
+        <input type="text" name="firstname" id="firstname" placeholder="Type Here" spellcheck="true">
         <br>
         <label for="lastname">Last Name</label>
-        <input type="text" name="lastname" id="lastname" placeholder="Type Here" spellcheck="true" required>
+        <input type="text" name="lastname" id="lastname" placeholder="Type Here" spellcheck="true">
         <br>
-        <label for="Website">Website</label>
-        <input type="url" name="url" id="url" placeholder="Social Media or Resume Link" pattern="https://.*" size="30" required>
+    <!-- url -->
+        <label for="website">Website</label>
+        <input type="url" name="url" id="url" placeholder="Social Media or Resume Link" pattern="https://.*" size="30">
         <br>
-        <!-- <label for="contact">Prefered Contact</label>
-        <input type="checkbox" id="phone" name="phone"> -->
-  
-        <br>
+    <!-- email -->
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Full Email Address" required>
+        <input type="email" name="email" id="email" placeholder="Full Email Address">
         <br>
     <!-- password -->
         <label for="password">Password</label>
-        <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" minlength="8" required> (8 characters minimum)
+        <input type="password" name="password" id="password" placeholder="8 characters minimum" minlength="8"> 
+        <hr>
+        <!-- checkboxes -->
+        <h3>Subscribe Here</h3>
+        <div class="checkboxes">
+            <label for="check1">Updates</label>
+            <input type="checkbox" id="updates" name="sub">
+            <label for="check2">Promotions</label>
+            <input type="checkbox" id="promotions" name="sub">
+            <label for="check3">News</label>
+            <input type="checkbox" id="news" name="sub">
+        </div>
         <br>
     <!-- range -->
-        <label for="comfort">Comfort Level with JavaScript</label>
-        <input type="range" id="start" name="age" min="0" max="10">
+        <h3>JavaScript Knowledge</h3>
+        <input type="range" id="start" name="know" min="0" max="10">
         <br>
     <!-- radio -->
-        <div class="radio">
+        <span class="radio">
             <label for="choice1">Male</label>
             <input type="radio" id="male" value="male" name="sex">
         
@@ -49,7 +61,7 @@
         
             <label for="choice3">Other</label>
             <input type="radio" id="other" value="other" name="sex">
-        </div>
+        </span>
 
     <!-- buttons -->
         <div class="buttons">
@@ -62,8 +74,7 @@
 
     
     <script src="./js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    
 
     
 </body>
